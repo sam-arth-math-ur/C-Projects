@@ -1,7 +1,4 @@
 /* Program Name: Coin Change
- * Student Name: Samarth Mathur
- * Student ID: 	000-700-958
- * NetID: smathur3
  * Description: We are writing a program that asks our user for an amount of money in cents between 0-99 and to calculate the correct change
  */
 import java.util.Scanner;
