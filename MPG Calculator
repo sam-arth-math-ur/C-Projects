@@ -1,14 +1,5 @@
 /* Program Name: MPG Calculator
- * Student Name: Samarth Mathur
- * Net ID: smathur3
- * Student ID: STUDENT ID HERE (000-700-958))
  * Program Description: This program asks for a command (car, truck, or done) and based upon the input, calculates the average miles per gallon for all given vehicles. If one or both aren't provided it will give the user an output indicating such as.
- * Sources: Annie (TA).
- *   - Do not directly copy code from any source:
- *     other students, Stack Overflow, ChatGPT, etc.
- *   - Do not include code in your solution you do not understand or cannot
- *     explain.
- *   - We check plagiarism for similarities and irregularities.
  */
 
 //! Remember: your comments
