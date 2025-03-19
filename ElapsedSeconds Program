@@ -1,7 +1,4 @@
 /* Program Name: ElapsedSeconds 
- * Student Name: Samarth Mathur
- * Student ID: 	000-700-958
- * NetID: smathur3
  * Description: We are writing a program that asks our user a elapsed time in seconds. We need to have the output give us elapsed time in hours, minutes, and seconds.
 */
 import java.util.Scanner;
