@@ -1,17 +1,6 @@
 /* Program Name: Coffee Lab
- * Student Name: Samarth Mathur
- * Net ID: smathur3
- * Student ID: STUDENT ID HERE (000-700-958)
  * Program Description: We are writing a program that looks up the city you are in and based on the said elevation of the city, it calculates pressure and boiling point.
- * Sources:  Ryan(TA)
- *   - Do not directly copy code from any source:
- *     other students, Stack Overflow, ChatGPT, etc.
- *   - Do not include code in your solution you do not understand or cannot
- *     explain.
- *   - We check plagiarism for similarities and irregularities.
  */
-
-//  - gradescript command: python3.11 scripts/test.py boiling.cpp
 
 #include <fstream>
 #include <iostream>
