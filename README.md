@@ -1,1 +1,97 @@
-# C-Projects
+# C-Projects - Coffee and Boiling Point Calculator
+#include <fstream>
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <vector>
+#include <cmath>
+#include <sstream>
+
+using namespace std;
+
+// variables and functions to calculate boiling point
+double elevationToBoilingPoint(const double elevation) {
+    double boilingPoint = 0.0;
+	double pressure = 0.0;
+	
+	
+	pressure = 29.921 * pow((1 - .0000068753 * elevation),  5.2559);
+
+	boilingPoint = 49.161 * log(pressure) + 44.932;
+
+    return boilingPoint;
+}
+
+int main(int argc, char **argv) {
+	
+	// error checking for proper number of arguments
+	if (argc !=  2) {
+		cerr << "usage: ./coffee filename" << endl;
+		return 1;
+	}
+	
+
+	const string cityAltitude = argv[1];
+	ifstream fin;
+
+	fin.open(cityAltitude);
+	
+	// error checks to see if file opens
+	if(!fin.is_open()) {
+		cerr << "File failed to open." << endl;
+		return 1;
+	}
+	
+	// create vectors for following data types being sourced
+	vector <string> cityNames;
+	vector <string> stateNames;
+	vector <int> elevations;
+	
+	string line, elevations_string;
+
+	getline(fin, line);
+	
+	// intalize the city numbers, starting with 1
+	int cityNum = 1;
+
+	cout << "Boiling Point at Altitude Calculator" << endl;
+	
+	// takes data from file 
+	while(getline(fin, line)){
+		
+		string cityName;
+		string stateName;
+		int elevation;
+		
+		istringstream fin(line);
+	
+		// takes names of city name, state name, and elevation of each row of data provided in file
+		getline(fin, cityName, ',');
+		getline(fin, stateName, ',');
+		getline(fin, elevations_string, ',');
+
+		// adds new element for each data type to vector, increasing it's size
+		cityNames.push_back(cityName);
+		stateNames.push_back(stateName);
+		elevations.push_back(stoi(elevations_string));
+
+		cout << cityNum << ". " << cityName << endl;
+		cityNum++;
+	}
+	
+	
+	// asks user for city number 
+	int numOfCity;;
+	cout << "Enter city number: ";
+	cin >> numOfCity;
+
+	// calculates boiling point
+	double boilingPoint = elevationToBoilingPoint(elevations[numOfCity - 1]);
+
+
+	// prints out final statement with proper calculations rounded to 3 decimal places
+	cout << "The boiling point at " << cityNames[numOfCity- 1] << " is " << setprecision(6) <<  boilingPoint << " degrees Fahrenheit." << endl;
+    
+	fin.close();
+	return 0;
+}
