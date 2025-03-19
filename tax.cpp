@@ -1,22 +1,8 @@
 /* Program Name: Take Home Pay Calculator
- * Student Name: Samarth Mathur
- * Net ID: smathur3
- * Student ID: STUDENT ID HERE (000-700-958)
  * Program Description: Create a program that allows the user to enter in an annual job salary and then output infomration about taxes, post-tax salary, and your monthly take home pay.
- * Sources: Student - Dhruv Patel, Ryan (TA) 
- *	 - -Cite any instructors, students, or external resources you used here.
- *   - Do not directly copy code from any source:
- *     other students, Stack Overflow, ChatGPT, etc.
- *   - Do not include code in your solution you do not understand or cannot
- *     explain.
- *   - We check plagiarism for similarities and irregularities.
  */
 
-//! Remember: your comments
-//! Remember: your formatting and indentation
-//  - auto-format in vim with gg=G in normal mode, in vscode with alt+shift+f
-//! Remember: check your solution with the gradescripts
-//  - gradescript command: python3.11 scripts/test.py tax.cpp
+
 
 #include <iomanip> 
 #include <iostream>
