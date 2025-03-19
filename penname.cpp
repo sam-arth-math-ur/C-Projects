@@ -1,21 +1,7 @@
 /* Program Name: Penname
- * Student Name: Samarth Mathur
- * Net ID: smathur3
- * Student ID: STUDENT ID HERE (000-700-958)
  * Program Description: We are creating a program that allows an author to create a penname. We ask the user for a name, age, street number, street name, type and city they were born in.
- *w` Sources: Cite any instructors, students, or external resources you used here.
- *   - Do not directly copy code from any source:
- *     other students, Stack Overflow, ChatGPT, etc.
- *   - Do not include code in your solution you do not understand or cannot
- *     explain.
- *   - We check plagiarism for similarities and irregularities.
  */
 
-//! Remember: your comments
-//! Remember: your formatting and indentation
-//  - auto-format in vim with gg=G in normal mode, in vscode with alt+shift+f
-//! Remember: check your solution with the gradescripts
-//  - gradescript command: python3.11 scripts/test.py penname.cpp
 
 #include <iostream>
 #include <string>
