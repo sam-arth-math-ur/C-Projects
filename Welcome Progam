@@ -1,7 +1,4 @@
 /* Program Name: Welcome 
- * Student Name: Samarth Mathur
- * Student ID: 	000-700-958
- * NetID: smathur3
  * Description: We are writing a program that asks the user for their first and last name. Then, take the first and last name and print a greeting.
 */
 import java.util.Scanner;
