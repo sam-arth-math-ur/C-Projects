@@ -1,14 +1,5 @@
 /* Program Name: Speeding Ticket Calculator
- * Student Name: Samarth Mathur
- * Net ID: smathur3
- * Student ID: STUDENT ID HERE (000-700-958)
  * Program Description: We are to write and develop a speeding ticket fee calculator. We are to ask the user for a ticket file which is produced by a central police database which will then output a file.
- * Sources: Ryan(TA), Emily(TA)
- *   - Do not directly copy code from any source:
- *     other students, Stack Overflow, ChatGPT, etc.
- *   - Do not include code in your solution you do not understand or cannot
- *     explain.
- *   - We check plagiarism for similarities and irregularities.
  */
 
 
